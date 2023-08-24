@@ -7,7 +7,7 @@
 */
 void fnc_push(stack_t **head, unsigned int counterl)
 {
-	int n, k = 0, flag = 0;
+	int k = 0, flag = 0;
 
 	if (bus.arg)
 	{
@@ -29,9 +29,4 @@ void fnc_push(stack_t **head, unsigned int counterl)
 		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE); }
-	n = atoi(bus.arg);
-	if (bus.lf == 0)
-		addnode(head, n);
-	else
-		addqueue(head, n);
 }
