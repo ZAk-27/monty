@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <ctype.h>
 #include <fcntl.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * struct stack_s - doubly list stack 
  * @n: integer
