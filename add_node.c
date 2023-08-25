@@ -8,10 +8,10 @@
  */
 void addnode(stack_t **head, int n)
 {
-	stack_t *new_item, *ax;
+	stack_t *ax, *new_item;
 
 	ax = *head;
-	new_item == malloc(sizeof(stack_t));
+	new_item = malloc(sizeof(stack_t));
 	if (new_item == NULL)
 	{
 		printf("Error\n");
