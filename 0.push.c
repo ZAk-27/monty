@@ -3,11 +3,11 @@
  * fnc_push - adding node to the stack
  * @head: stack head
  * @counterl: line_numb
- * Return: no return
+ * Return: void
 */
 void fnc_push(stack_t **head, unsigned int counterl)
 {
-	int k = 0, flag = 0;
+	int n, k = 0, flag = 0;
 
 	if (bus.arg)
 	{
@@ -29,4 +29,7 @@ void fnc_push(stack_t **head, unsigned int counterl)
 		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE); }
+
+	n = atoi(bus.arg);
+	addnode(head, n);
 }

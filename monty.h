@@ -64,4 +64,6 @@ void fnc_pop(stack_t **head, unsigned int counterl);
 void fnc_swap(stack_t **head, unsigned int counterl);
 void fnc_add(stack_t **head, unsigned int counterl);
 void fnc_nop(stack_t **head, unsigned int counterl);
-#endif
+void addnode(stack_t **head, int n);
+
+#endif /* MONTY_H */
